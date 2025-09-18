@@ -1,0 +1,344 @@
+
+body { 
+    position: relative;
+}
+
+/* font colors */
+.text-color {
+    color:#2a2927 !important;
+}
+.text-color-footer {
+    color:#2a2927 !important;
+    opacity: 0.6;
+}
+.text-color-footer:hover {
+    color:#2a2927 !important;
+    opacity: 0.9;
+    text-decoration: underline wavy;
+    text-underline-offset: 0.3em;
+}
+
+/* font styles start */
+.carousel-caption h1 {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 100px !important; /* desktop */
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+   text-align: left;
+   line-height: 1 !important;
+}
+@media (max-width: 1300px) {
+    .carousel-caption h1 {
+      font-size: 70px !important; /* mobile */
+    }
+}
+@media (max-width: 800px) {
+    .carousel-caption h1 {
+      font-size: 50px !important; /* mobile */
+    }
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #6a563f !important;
+    line-height: 1 !important;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: none!important;
+}
+
+h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: none!important;
+    color:#ffffff !important;
+}
+
+h5, .table th {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+
+p, .accordion-body, .table td, .link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 200;
+    font-size: 17px !important;
+    letter-spacing: 0.3px;
+}
+.accordion-button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 300;
+    font-size: 17px !important;
+    letter-spacing: 0.3px;
+}
+
+.carousel-caption span{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    opacity: 1;
+    color: #3f332c;
+}
+
+.navbar-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 14px !important;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+}
+
+.nav-link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 14px !important;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.card-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px !important;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+/* font styles end */
+
+/* hero image text shadows */
+.text-shadow {
+    text-shadow: #ffffff 0px 0 20px;
+}
+.text-shadow-big {
+    text-shadow: #7f7d7b 1px 0 50px;
+}
+.text-shadow-dark {
+    text-shadow: #100f0f 1px 0 20px;
+}
+
+/* navigation background */
+.navbar-custom {
+    background-color: rgba(81, 73, 58, 0.65);
+}
+.navbar-custom:hover {
+    background-color: rgba(81, 73, 58, 0.98);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* navigation text and link color */
+.navbar-custom .navbar-text,  .navbar-nav .nav-link {
+    color:#ffffff;
+}
+
+/* links hover */
+.navbar-nav .nav-link:hover {
+    color:#ffffff;
+    text-decoration: underline wavy;
+    text-underline-offset: 0.3em;
+}
+
+/* remove the borders of the hamburger menu */
+.navbar-custom .navbar-toggler, .navbar-custom .navbar-toggler:focus {
+    box-shadow: none;
+    border: 0px;
+}
+
+/* hamburger menu icon color */
+.navbar-custom svg {
+    fill: #ffffff;
+    opacity: 0.9;
+}
+button:hover svg path  {
+    fill: #edbde9 ; 
+}
+button:hover  {
+    background-color: transparent !important; 
+}
+
+/* logo color */
+.navbar-brand img{
+    opacity: 0.9;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(900%) hue-rotate(54deg) brightness(114%) contrast(86%); /* changing the color to light */
+}
+.navbar-brand img:hover, .footer-brand img:hover{
+    opacity: 0.7;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(55%) saturate(2551%) hue-rotate(196deg) brightness(90%) contrast(106%); /* changing the color to violet (#edbde9) */
+} 
+.footer-brand img{
+    opacity: 0.9;
+    filter: brightness(0) saturate(100%) invert(23%) sepia(3%) saturate(4706%) hue-rotate(351deg) brightness(101%) contrast(85%); /* changing the color to brown (#524332) */
+}
+    
+/* active link styling */
+.nav-link.active {
+    color: #edbde9 !important;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+/* wave line color and size */
+.wave-line svg{
+    fill: #6a563f;
+    max-width: 150px;
+    height: fit-content;
+}
+
+/* wave line color and size */
+.wave-line-small svg{
+    fill: #6a563f;
+    max-width: 100px;
+    height: fit-content;
+}
+
+/* remove padding from container */
+.container-md, .container-fluid {
+    --bs-gutter-x: 0rem !important;
+}
+
+/* add padding to the sides */
+.padding {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* background color for container */
+.bg-color {
+    background-color: #eeebee !important;
+}
+
+/* reduce image size in horizontal card */
+@media (min-width: 576px) and (max-width: 767.98px) { /* from sm size upwards and downwards from md size */
+    .img-sm-50 {
+        width: 50% !important;
+    }
+}
+
+/* maximum height for card images */
+.card img {
+    max-height: 250px;  
+}
+
+/* button dark brown */
+.btn {
+    background-color: #4e3f2f !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 20px !important;
+    letter-spacing: 0.2px;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    padding: 10px 20px !important;
+}
+
+/* button purple */
+.btn-purple {
+    background-color: #cca6c9 !important;
+    color: #1f1d1b !important;
+    border: none !important;
+    border-radius: 20px !important;
+    letter-spacing: 0.2px;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+}
+
+/* button white */
+.btn-light {
+    background-color: #ffffff !important;
+    color: #2a2927 !important;
+    border: none !important;
+    border-radius: 20px !important;
+    letter-spacing: 0.2px;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+    width: 150px !important;
+}
+
+/* buttons purple hover */
+.btn:hover, .btn-light:hover {
+    background-color: #cca6c9 !important;
+    color: #181817 !important;
+    font-weight: 600 !important;
+    transform: scale(1.03);
+    transition: background-color 0.2s linear, 
+                color 0.2s linear, 
+                font-weight 0.2s linear,
+                transform 0.2s linear;
+}
+
+/* button brown hover */
+.btn-purple:hover {
+    background-color: #4e3f2f !important;
+    color: #ffffff !important;
+    font-weight: 400 !important;
+    transform: scale(1.03);
+    transition: background-color 0.2s linear, 
+                color 0.2s linear, 
+                font-weight 0.2s linear,
+                transform 0.2s linear;
+}
+
+/* table header styles */
+.table th {
+    color: #2a2927!important; 
+    font-size: 16px !important;
+    text-transform: uppercase;
+    font-weight: 400 !important;
+}
+
+/* table data styles */
+.table td {
+    color: #2a2927!important; 
+    font-size: 17px !important;
+    padding: 15px 10px !important;
+    white-space: nowrap; /* prevent text wrapping */
+}
+
+/* table th border color */
+.table {
+    color: #a99e8a;
+}
+
+/* table row hover effect */
+.table tr:hover td {
+    background-color: #f5f2f5 !important; 
+    transition: background-color 0.2s ease;
+}
+
+/* accordion question styles */
+.accordion-button {
+    color: #2a2927!important;
+}   
+
+/* accordion question hover */
+.accordion-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease, font-weight 0.2s ease;
+    text-decoration: none; 
+    font-weight: 400 !important;
+}
+  
+/* accordion question open */
+.accordion-button:not(.collapsed) {
+    transform: scale(1.05);
+    box-shadow: none !important; 
+    font-weight: 400 !important;
+}
+
+/* remove focus border */
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+  
+/* accordion answer styles */
+.accordion-body {
+    color: #2a2927; 
+    background-color: #f2f0f2;
+    border-radius: 0 50px 50px 50px ;
+    margin-bottom: 20px !important;
+    padding: 20px 30px !important;
+    font-size: 15px;
+}                    
