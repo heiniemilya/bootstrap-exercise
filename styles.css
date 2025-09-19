@@ -197,7 +197,7 @@ button:hover  {
 } 
 
 /* footer logo */
-.footer-brand img{
+.footer-brand img {
     opacity: 0.9;
     filter: brightness(0) saturate(100%) invert(23%) sepia(3%) saturate(4706%) hue-rotate(351deg) brightness(101%) contrast(85%); /* changing the color to brown (#524332) */
 }
@@ -210,29 +210,23 @@ button:hover  {
 }
 
 /* wave line color and size */
-.wave-line svg{
+.wave-line svg {
     fill: var(--light-brown);
     max-width: 150px;
     height: fit-content;
 }
 
 /* wave line color and size */
-.wave-line-small svg{
+.wave-line-small svg {
     fill: var(--light-brown);
     max-width: 100px;
     height: fit-content;
 }
 
 /* remove padding from container */
-main, #grid.container-md {
+.no-padding {
     padding-left: 0px !important;
     padding-right: 0px !important;
-}
-
-/* add padding to the sides */
-.padding {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
 }
 
 /* background color for container */
