@@ -9,8 +9,8 @@
     --lighest-purple: #f5f2f5;
 }
 
-body, html { 
-    overflow-x: hidden;
+div {
+    overflow-x: hidden !important;
 }
 
 /* font colors */
