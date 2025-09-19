@@ -2,6 +2,9 @@
 body { 
     position: relative;
 }
+.navbar.fixed-top {
+    z-index: 1050; 
+}
 
 /* font colors */
 .text-color {
@@ -161,7 +164,16 @@ button:hover  {
 .navbar-brand img{
     opacity: 0.9;
     filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(900%) hue-rotate(54deg) brightness(114%) contrast(86%); /* changing the color to light */
+    max-width: 100%;
 }
+
+/* logo size in mobile */
+@media (max-width: 575.98px) { /* for xs size and below */
+    .navbar-brand img {
+        max-width: 70px !important;
+    }
+}
+
 .navbar-brand img:hover, .footer-brand img:hover{
     opacity: 0.7;
     filter: brightness(0) saturate(100%) invert(100%) sepia(55%) saturate(2551%) hue-rotate(196deg) brightness(90%) contrast(106%); /* changing the color to violet (#edbde9) */
@@ -193,9 +205,11 @@ button:hover  {
 }
 
 /* remove padding from container */
-.container-md, .container-fluid {
-    --bs-gutter-x: 0rem !important;
+main, #grid.container-md {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
+
 
 /* add padding to the sides */
 .padding {
