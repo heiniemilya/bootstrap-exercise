@@ -9,14 +9,9 @@
     --lighest-purple: #f5f2f5;
 }
 
-body { 
+body, html { 
     overflow-x: hidden;
 }
-
-.navbar {
-    max-width: calc(100% - 12px);
-    overflow-x: hidden;
-  }
 
 /* font colors */
 .text-color {
