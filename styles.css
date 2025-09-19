@@ -1,21 +1,33 @@
+:root {
+    --white: #ffffff;
+    --dark-brown: #2a2927;
+    --semi-brown:  #4d463b;
+    --light-brown: #6a563f;
+    --purple: #cca6c9;
+    --bright-purple: #edbde9;
+    --light-purple:  #f2f0f2;
+    --lighest-purple: #f5f2f5;
+}
 
 body { 
     position: relative;
 }
-.navbar.fixed-top {
-    z-index: 1050; 
-}
+
+.navbar {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
 /* font colors */
 .text-color {
-    color:#2a2927 !important;
+    color: var(--dark-brown) !important;
 }
 .text-color-footer {
-    color:#2a2927 !important;
+    color: var(--dark-brown) !important;
     opacity: 0.6;
 }
 .text-color-footer:hover {
-    color:#2a2927 !important;
+    color: var(--dark-brown) !important;
     opacity: 0.9;
     text-decoration: underline wavy;
     text-underline-offset: 0.3em;
@@ -32,12 +44,17 @@ body {
 }
 @media (max-width: 1300px) {
     .carousel-caption h1 {
-      font-size: 70px !important; /* mobile */
+      font-size: 70px !important; 
     }
 }
 @media (max-width: 800px) {
     .carousel-caption h1 {
-      font-size: 50px !important; /* mobile */
+      font-size: 50px !important; 
+    }
+}
+@media (max-width: 520px) {
+    .carousel-caption h1 {
+      font-size: 35px !important; /* mobile */
     }
 }
 
@@ -45,7 +62,7 @@ h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #6a563f !important;
+    color: var(--light-brown) !important;
     line-height: 1 !important;
 }
 
@@ -53,29 +70,33 @@ h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 0.5px;
     text-transform: none!important;
+    color: var(--light-brown) !important;
 }
 
 h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 0.5px;
     text-transform: none!important;
-    color:#ffffff !important;
+    color: var(--white) !important;
 }
 
 h5, .table th {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    font-weight: 200;
     letter-spacing: 0.5px;
+    color: var(--light-brown) !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    font-weight: 400 !important;
 }
 
 p, .accordion-body, .table td, .link {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif ;
     font-weight: 200;
     font-size: 17px !important;
     letter-spacing: 0.3px;
 }
 .accordion-button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif ;
     font-weight: 300;
     font-size: 17px !important;
     letter-spacing: 0.3px;
@@ -85,18 +106,18 @@ p, .accordion-body, .table td, .link {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 0.5px;
     opacity: 1;
-    color: #3f332c;
+    color: var(--semi-brown);
 }
 
 .navbar-text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif ;
     font-size: 14px !important;
     font-weight: 100;
     letter-spacing: 1.5px;
 }
 
 .nav-link {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif ;
     font-size: 14px !important;
     letter-spacing: 0.8px;
     text-transform: uppercase;
@@ -110,9 +131,9 @@ p, .accordion-body, .table td, .link {
 }
 /* font styles end */
 
-/* hero image text shadows */
+/* text shadows */
 .text-shadow {
-    text-shadow: #ffffff 0px 0 20px;
+    text-shadow:  var(--white) 0px 0 20px;
 }
 .text-shadow-big {
     text-shadow: #7f7d7b 1px 0 50px;
@@ -132,12 +153,12 @@ p, .accordion-body, .table td, .link {
 
 /* navigation text and link color */
 .navbar-custom .navbar-text,  .navbar-nav .nav-link {
-    color:#ffffff;
+    color: var(--white);
 }
 
 /* links hover */
 .navbar-nav .nav-link:hover {
-    color:#ffffff;
+    color: var(--white);
     text-decoration: underline wavy;
     text-underline-offset: 0.3em;
 }
@@ -150,11 +171,11 @@ p, .accordion-body, .table td, .link {
 
 /* hamburger menu icon color */
 .navbar-custom svg {
-    fill: #ffffff;
+    fill:  var(--white);
     opacity: 0.9;
 }
 button:hover svg path  {
-    fill: #edbde9 ; 
+    fill: var(--purple) ; 
 }
 button:hover  {
     background-color: transparent !important; 
@@ -174,10 +195,13 @@ button:hover  {
     }
 }
 
+/* logo hover effect */
 .navbar-brand img:hover, .footer-brand img:hover{
     opacity: 0.7;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(55%) saturate(2551%) hue-rotate(196deg) brightness(90%) contrast(106%); /* changing the color to violet (#edbde9) */
+    filter: brightness(0) saturate(100%) invert(100%) sepia(55%) saturate(2551%) hue-rotate(196deg) brightness(90%) contrast(106%); /* changing the color to violet (var(--purple)) */
 } 
+
+/* footer logo */
 .footer-brand img{
     opacity: 0.9;
     filter: brightness(0) saturate(100%) invert(23%) sepia(3%) saturate(4706%) hue-rotate(351deg) brightness(101%) contrast(85%); /* changing the color to brown (#524332) */
@@ -185,21 +209,21 @@ button:hover  {
     
 /* active link styling */
 .nav-link.active {
-    color: #edbde9 !important;
+    color: var(--purple) !important;
     font-weight: 600;
     text-decoration: none !important;
 }
 
 /* wave line color and size */
 .wave-line svg{
-    fill: #6a563f;
+    fill: var(--light-brown);
     max-width: 150px;
     height: fit-content;
 }
 
 /* wave line color and size */
 .wave-line-small svg{
-    fill: #6a563f;
+    fill: var(--light-brown);
     max-width: 100px;
     height: fit-content;
 }
@@ -210,7 +234,6 @@ main, #grid.container-md {
     padding-right: 0px !important;
 }
 
-
 /* add padding to the sides */
 .padding {
     padding-left: 15px !important;
@@ -219,7 +242,7 @@ main, #grid.container-md {
 
 /* background color for container */
 .bg-color {
-    background-color: #eeebee !important;
+    background-color: var(--light-purple) !important;
 }
 
 /* reduce image size in horizontal card */
@@ -236,8 +259,8 @@ main, #grid.container-md {
 
 /* button dark brown */
 .btn {
-    background-color: #4e3f2f !important;
-    color: #ffffff !important;
+    background-color: var(--semi-brown)!important;
+    color:  var(--white) !important;
     border: none !important;
     border-radius: 20px !important;
     letter-spacing: 0.2px;
@@ -248,7 +271,7 @@ main, #grid.container-md {
 
 /* button purple */
 .btn-purple {
-    background-color: #cca6c9 !important;
+    background-color: var(--purple) !important;
     color: #1f1d1b !important;
     border: none !important;
     border-radius: 20px !important;
@@ -260,8 +283,8 @@ main, #grid.container-md {
 
 /* button white */
 .btn-light {
-    background-color: #ffffff !important;
-    color: #2a2927 !important;
+    background-color:  var(--white) !important;
+    color:  var(--dark-brown) !important;
     border: none !important;
     border-radius: 20px !important;
     letter-spacing: 0.2px;
@@ -273,7 +296,7 @@ main, #grid.container-md {
 
 /* buttons purple hover */
 .btn:hover, .btn-light:hover {
-    background-color: #cca6c9 !important;
+    background-color: var(--purple) !important;
     color: #181817 !important;
     font-weight: 600 !important;
     transform: scale(1.03);
@@ -285,8 +308,8 @@ main, #grid.container-md {
 
 /* button brown hover */
 .btn-purple:hover {
-    background-color: #4e3f2f !important;
-    color: #ffffff !important;
+    background-color: var(--semi-brown)!important;
+    color:  var(--white) !important;
     font-weight: 400 !important;
     transform: scale(1.03);
     transition: background-color 0.2s linear, 
@@ -295,17 +318,10 @@ main, #grid.container-md {
                 transform 0.2s linear;
 }
 
-/* table header styles */
-.table th {
-    color: #2a2927!important; 
-    font-size: 16px !important;
-    text-transform: uppercase;
-    font-weight: 400 !important;
-}
 
 /* table data styles */
 .table td {
-    color: #2a2927!important; 
+    color:  var(--dark-brown)!important; 
     font-size: 17px !important;
     padding: 15px 10px !important;
     white-space: nowrap; /* prevent text wrapping */
@@ -313,18 +329,18 @@ main, #grid.container-md {
 
 /* table th border color */
 .table {
-    color: #a99e8a;
+    color: var(--light-brown) !important;
 }
 
 /* table row hover effect */
 .table tr:hover td {
-    background-color: #f5f2f5 !important; 
+    background-color: var(--lighest-purple) !important; 
     transition: background-color 0.2s ease;
 }
 
 /* accordion question styles */
 .accordion-button {
-    color: #2a2927!important;
+    color:  var(--dark-brown)!important;
 }   
 
 /* accordion question hover */
@@ -349,8 +365,8 @@ main, #grid.container-md {
   
 /* accordion answer styles */
 .accordion-body {
-    color: #2a2927; 
-    background-color: #f2f0f2;
+    color:  var(--dark-brown); 
+    background-color: var(--light-purple);
     border-radius: 0 50px 50px 50px ;
     margin-bottom: 20px !important;
     padding: 20px 30px !important;
