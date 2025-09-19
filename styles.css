@@ -10,11 +10,11 @@
 }
 
 body { 
-    position: relative;
+    overflow-x: hidden;
 }
 
 .navbar {
-    max-width: calc(100% - 10px);
+    max-width: calc(100% - 12px);
     overflow-x: hidden;
   }
 
