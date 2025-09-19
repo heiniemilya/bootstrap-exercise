@@ -9,7 +9,7 @@
     --lighest-purple: #f5f2f5;
 }
 
-div {
+#grid{
     overflow-x: hidden !important;
 }
 
